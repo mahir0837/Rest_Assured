@@ -1,11 +1,13 @@
 package com.cydeo.day11;
 
+import com.cydeo.utilities.ExcelUtil;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class P06_MethodSourceTest {
 
@@ -15,6 +17,19 @@ public class P06_MethodSourceTest {
 
         System.out.println("name = " + name);
 
+    }
+
+    @ParameterizedTest
+    @MethodSource("getExcellData")
+    public void test2(Map<String,String>userInfo){
+        System.out.println("userInfo = " + userInfo);
+        System.out.println("userInfo.get(\"Email\") = " + userInfo.get("Email"));
+        System.out.println("userInfo.get(\"Password\") = " + userInfo.get("Password"));
+    }
+
+    public static List<Map<String, String>> getExcellData() {
+        ExcelUtil excelUtil = new ExcelUtil("src/test/resources/Library.xlsx", "Library1-short");
+        return excelUtil.getDataList();
     }
 
     public static List<String> getNames() {
