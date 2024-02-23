@@ -1,5 +1,6 @@
 package com.cydeo.day12;
 
+import com.cydeo.utilities.SpartanNewTestBase;
 import com.cydeo.utilities.SpartanTestBase;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
@@ -7,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class P01_OldRestAssured extends SpartanTestBase {
+public class P01_OldRestAssured extends SpartanNewTestBase {
 
     @Test
     void getAllSpartan() {

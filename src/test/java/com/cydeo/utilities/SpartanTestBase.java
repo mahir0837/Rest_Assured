@@ -7,9 +7,7 @@ public class SpartanTestBase{
 
     @BeforeAll
     public static void init(){
-        baseURI="http://54.208.32.156";
-        port=7000;
-        basePath="/api";
+        baseURI="http://54.208.32.156:8000";
     }
 
 }
