@@ -1,0 +1,4 @@
+role,id,statusCode
+editor,3,403
+user,3,403
+admin,3,204
