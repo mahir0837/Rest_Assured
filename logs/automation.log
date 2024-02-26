@@ -1,0 +1,9 @@
+26.02.2024 09:52:03 INFO  SpartanTestBase:34 - POST SPARTAN ---> Spartan(id=0, name=API POST Flow, gender=Male, phone=8877445596)
+26.02.2024 09:52:09 INFO  SpartanTestBase:46 - 142 is created
+26.02.2024 09:52:09 INFO  SpartanTestBase:62 - GET SPARTAN --> {"id":142,"name":"API POST Flow","gender":"Male","phone":8877445596}
+26.02.2024 09:52:09 INFO  SpartanTestBase:74 - PUT SPARTAN --> Spartan(id=0, name=API PUT Flow, gender=Male, phone=8877445596)
+26.02.2024 09:52:09 INFO  SpartanTestBase:85 - 142 is updated
+26.02.2024 09:52:10 INFO  SpartanTestBase:103 - GET SPARTAN --> {"id":142,"name":"API PUT Flow","gender":"Male","phone":8877445596}
+26.02.2024 09:52:10 INFO  SpartanTestBase:118 - 142 is deleted
+26.02.2024 09:52:10 INFO  SpartanTestBase:133 - GET SPARTAN is NOT FOUND --> {"timestamp":"2024-02-26T14:51:48.859+00:00","status":404,"error":"Not Found","message":"","path":"/api/spartans/142"}
+26.02.2024 09:52:10 INFO  SpartanTestBase:134 - 142 is not exist
